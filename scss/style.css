@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap");
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+button {
+  font-family: "Roboto", sans-serif;
+}
+
+/*btn*/
+.btn {
+  cursor: pointer;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100vh;
+  background: aqua;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: background 1s linear;
+  transition: background 1s linear;
+}
+
+.player {
+  max-width: 300px;
+  width: 100%;
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 30px;
+  -webkit-box-shadow: 0px 0px 104px black;
+          box-shadow: 0px 0px 104px black;
+}
+
+.player__title {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.2;
+  text-align: center;
+  color: #2b3c5b;
+  text-transform: uppercase;
+}
+
+.player__cover__img {
+  display: block;
+  max-width: 200px;
+  width: 100%;
+  height: 200px;
+  margin: 25px auto;
+  border-radius: 50%;
+  -webkit-transition: all 2s linear;
+  transition: all 2s linear;
+}
+
+.player__cover__img.active {
+  -webkit-animation: rotateAnimation 3s linear infinite;
+          animation: rotateAnimation 3s linear infinite;
+}
+
+.player__song {
+  font-weight: 500;
+  line-height: 1.2;
+  font-size: 20px;
+  text-align: center;
+  color: #2b3c5b;
+  margin-bottom: 20px;
+}
+
+.player__time {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.player__brogress {
+  max-width: 250px;
+  width: 100%;
+  height: 10px;
+  background: #cfcccc;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  cursor: pointer;
+  position: relative;
+}
+
+.player__brogress__bar {
+  width: 0;
+  height: 10px;
+  background-color: #2b3c5b;
+}
+
+.player__button {
+  max-width: 200px;
+  width: 100%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.player__button .img__prev,
+.player__button .img__next {
+  width: 30px;
+  height: auto;
+}
+
+.player__button .img__player {
+  width: 40px;
+  height: auto;
+}
+
+/*rotateAnimation*/
+@-webkit-keyframes rotateAnimation {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes rotateAnimation {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+/*# sourceMappingURL=style.css.map */

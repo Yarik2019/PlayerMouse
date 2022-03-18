@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="./scss/style.css">
+    <title>PlayerMouse</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="wrapper" id="ImgBg">
+            <div class="player">
+                <div class="player__title" id="title">
+                    Player
+                </div>
+                <div class="player__cover">
+                    <img class="player__cover__img" src="./img/cover1.jpg" alt="" id="img">
+                </div>
+                <div class="player__song" id="nameSong">
+                    lil_nas_x-old_town_road
+                </div>
+
+                <div class="player__time">
+                    <div id="timeCurrent">
+                        30
+                    </div>
+                    <div id="timeDuraction"></div>
+                </div>
+
+
+                <div class="player__brogress" id="brogress">
+                    <div class="player__brogress__bar" id="brogressBar"></div>
+                </div>
+                <div class="player__button">
+                    <div class="btn prev" id="btnPrev"><img class="img__prev" src="./img/prev.svg" alt=""></div>
+                    <div class="btn play" id="btnPlay"><img class="img__player" id="img__player" src="./img/play.svg" alt=""></div>
+                    <div class="btn next" id="btnNext"><img class="img__next"  src="./img/next.svg" alt=""></div>
+                </div>
+
+                <audio src="./audio/lil_nas_x-old_town_road.mp3" id="audio"></audio>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./js/main.js"></script>
+
+
+
+
+</body>
+
+</html>

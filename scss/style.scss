@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap");
+
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Roboto", sans-serif;
+   
+}
+
+button {
+    font-family: "Roboto", sans-serif;
+}
+
+/*btn*/
+  
+.btn{
+    cursor: pointer;
+}
+
+
+.container{}
+
+.wrapper{
+    width: 100%;
+    height: 100vh;
+    background: aqua;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: background 1s linear;
+
+}
+
+.player{
+
+    max-width: 300px;
+    width: 100%;
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 104px black;
+
+    
+    &__title{
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 1.2;
+        text-align: center;
+        color: #2b3c5b;
+        text-transform: uppercase;
+
+    }
+    &__cover{
+
+        &__img{
+            display: block;
+            max-width: 200px;
+            width: 100%;
+            height: 200px;
+            margin: 25px auto;
+            border-radius: 50%;
+            transition: all 2s linear;
+            
+            
+            
+            &.active{
+                animation: rotateAnimation 3s linear infinite;
+                
+            }
+
+        }
+    }
+    &__song{
+        font-weight: 500;
+        line-height: 1.2;
+        font-size: 20px;
+        text-align: center;
+        color: #2b3c5b;
+        margin-bottom: 20px;
+    }
+
+    &__time{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__brogress{
+        max-width: 250px;
+        width: 100%;
+        height: 10px;
+        background: rgb(207, 204, 204);
+        border-radius: 5px;
+        overflow: hidden;
+        margin-bottom: 20px;
+        cursor: pointer;
+        position: relative;
+        &__bar{
+
+            width: 0;
+            height: 10px;
+            background-color: #2b3c5b;
+
+        }
+    }
+
+    &__button{
+       
+
+        max-width: 200px;
+        width: 100%;
+        margin: 0 auto;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .img__prev, 
+        .img__next{
+            width: 30px;
+            height: auto;
+        }
+        .img__player{
+            width: 40px;
+            height: auto;
+        }
+       
+    }
+    
+}
+
+/*rotateAnimation*/
+@keyframes rotateAnimation{
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
